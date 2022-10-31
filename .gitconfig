@@ -1,0 +1,19 @@
+# This is Git's per-user configuration file.
+[user]
+	name = nn
+	email = wen.x.serena@gmail.com
+# Please adapt and uncomment the following lines:
+#	name = N
+#	email = nn@Ns-MacBook-Pro.local
+[alias]
+	co = checkout
+	br = branch
+        brd = branch --delete
+	st = status
+	cia = commit -am
+	ci = commit -m
+        cb = checkout -b
+	last = log -1 HEAD
+	aliasL = config --get-regexp alias
+	aliasD = config --global --unset
+        aliasA = config --global
