@@ -1,10 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-	name = nn
-	email = wen.x.serena@gmail.com
-# Please adapt and uncomment the following lines:
-#	name = N
-#	email = nn@Ns-MacBook-Pro.local
+	name = xsw
+	email = wen.x.serena@hotmail.com
 [alias]
 	co = checkout
 	br = branch
@@ -17,3 +14,8 @@
 	aliasL = config --get-regexp alias
 	aliasD = config --global --unset
         aliasA = config --global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
